@@ -4,3 +4,13 @@ SELECT id, account_id, total_amt_usd
 FROM orders
 ORDER BY total_amt_usd DESC
 LIMIT 5;
+
+/*Write a query to return the lowest 20 orders in terms of smallest total_amt_usd. Include the id, account_id, and total_amt_usd.*/
+
+SELECT id, account_id, total_amt_usd
+FROM orders
+ORDER BY total_amt_usd ASC
+LIMIT 20;
+/* In this query I updated the previous "LIMIT" of 5, to 20, in order to accomidate the new task. 
+The "ORDER BY" was also updated to "ASC" to show the lowest values for "total_amt_usd" first. 
+The "ORDER BY" does not have to be listed as "ASC" but was in this instance for visual.*/
